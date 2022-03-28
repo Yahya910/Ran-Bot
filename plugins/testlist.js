@@ -19,8 +19,8 @@ const anu = {
 						"mimetype": "image/jpeg",
 						"jpegThumbnail": global.thumb
 					},
-					"title": "ＵｗＵ",
-					"description": "Rikka",
+					"title": "𝗚𝗼𝘂𝗿𝗮𝘃",
+					"description": "Gourav",
 					"currencyCode": "USD",
 					"priceAmount1000": "999999999999",
 					"retailerId": ">//<",
@@ -33,7 +33,7 @@ const anu = {
   itsu.relayWAMessage(itsu.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": "Ｍｅｎｕ Ｂｏｔ",
-                        "description": " \n_©Ran 2022_ ",
+                        "description": " \n_©Gourav 2022_ ",
                         "buttonText": `Menu`,
                         "listType": "SINGLE_SELECT",
                         "sections": [
