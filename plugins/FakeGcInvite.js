@@ -15,7 +15,7 @@ const anu = {
 			"groupJid": "6285240750713-1610340626@g.us",
 			"inviteCode": "mememteeeekkeke",
 			"groupName": "P", 
-            "caption": "Hi lort", 
+            "caption": "Hi Gourav", 
             'jpegThumbnail': thumb
 		}
 	}
