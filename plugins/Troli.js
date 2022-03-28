@@ -10,11 +10,11 @@ const {
                         },
        message: {
                     orderMessage: {
-                            itemCount : 404,
-                            itemCoun : 404,
+                            itemCount : 3609,
+                            itemCoun : 3609,
                             surface : 404,
-                            message: 'uwu',
-                            orderTitle: 'B',
+                            message: 'gou',
+                            orderTitle: 'G',
                             thumbnail: thumb, 
                             sellerJid: '0@s.whatsapp.net'
           
