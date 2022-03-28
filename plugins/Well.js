@@ -4,7 +4,7 @@ let levelling = require('../lib/levelling')
 let handler = async (m, { itsu, text }) => {
   let [t1, t2] = text.split `|`
     let name = itsu.getName(m.sender)
- itsu.fakeReply(m.chat,t2 , '41798070610@s.whatsapp.net', t1+ '\n' ,'918132884890-1615035634@g.us')
+ itsu.fakeReply(m.chat,t2 , '41798070610@s.whatsapp.net', t1+ '\n' ,'918089152280-1615035634@g.us')
 }
  
 handler.help = ['cek']
