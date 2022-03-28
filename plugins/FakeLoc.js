@@ -10,12 +10,12 @@ const anu = {
                         },
        message: {
                     locationMessage: {
-                    name: 'Ｓａｙ Ｕｗｕ',
+                    name: 'GOURAV',
                     jpegThumbnail: thumb3
                           }
                         }
                       }
-itsu.sendMessage(m.chat, 'Hi lort',
+itsu.sendMessage(m.chat, 'Hi Gourav',
 MessageType.text, {quoted: anu, contextInfo:{"forwardingScore":999, "isForwarded": true}})
 }
 
