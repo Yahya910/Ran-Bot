@@ -20,9 +20,9 @@ function kyun(seconds){
 }
 					runtime = process.uptime()
 					teks = `${kyun(runtime)}`
-global.owner = ['6285888083107', '6285814079819' ] // Put your number here
-global.fake = ['6283820073017']
-global.fakeNum = ['6283820073017','6283820073017']
+global.owner = ['918089152280', '6285814079819' ] // Put your number here
+global.fake = ['918089152280']
+global.fakeNum = ['918089152280','6283820073017']
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -49,14 +49,14 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname =  `Ran`
-global.author = `Mitake`
+global.packname =  `Created by`
+global.author = `Gourav`
 global.wait = 'Subscribe Ya\n bit.ly/Papah-Chan'
 global.dga = 'Jika Ingin Membeli Limit\nSilahkan Ketik #buy 1'
 global.thumb = tum
 global.thumb2 = tum2
 global.thumb3 = tum3
-global.wm = `©Ran`
+global.wm = `©Gourav`
 
 global.runtime = teks
 global.multiplier = 69 // The higher, The harder levelup
