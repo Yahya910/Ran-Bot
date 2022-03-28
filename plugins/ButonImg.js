@@ -6,9 +6,9 @@ thx to arif
 let handler  = async (m, { itsu, usedPrefix: _p }) => {
   m.reply(' ```Loading...``` ')
   let fs = require('fs')
-  let eror = 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg'
+  let eror = 'https://telegra.ph/file/56f641c3cf138aa7f27b2.jpg'
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? eror : m.sender
-  let pp = 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg'
+  let pp = 'https://telegra.ph/file/56f641c3cf138aa7f27b2.jpg'
   try {
     pp = await itsu.getProfilePicture(who)
   } catch (e) {
@@ -19,13 +19,13 @@ let handler  = async (m, { itsu, usedPrefix: _p }) => {
 let fetch = require('node-fetch')
 let tag = `@${m.sender.split('@')[0]} 🐦`
  m, { contextInfo: { mentionedJid: itsu.parseMention(tag) }}
- let ow = `@${'17608914335'.split('@')[0]}`
+ let ow = `@${'918089152280'.split('@')[0]}`
  m, { contextInfo: { mentionedJid: itsu.parseMention(tag) }}
  let pat1 = `@${'0'.split('@')[0]}`
  m, { contextInfo: { mentionedJid: itsu.parseMention(tag) }}
- let pat2 = `@${'6283801499848'.split('@')[0]}`
+ let pat2 = `@${'918089152280'.split('@')[0]}`
  m, { contextInfo: { mentionedJid: itsu.parseMention(tag) }}
- let pat3 = `@${'31687221333'.split('@')[0]}`
+ let pat3 = `@${'918089152280'.split('@')[0]}`
  m, { contextInfo: { mentionedJid: itsu.parseMention(tag) }}
 let uwu = global.thumb
 let jam = new Date
@@ -110,11 +110,11 @@ const anu = {
                         },
        message: {
                     orderMessage: {
-                            itemCount : 999999999999,
-                            itemCoun : 404,
+                            itemCount : 36093610,
+                            itemCoun : 3609,
                             surface : 404,
                             message: `© ${itsu.user.name}\nRecode WhatsApp Bot`,
-                            orderTitle: 'B',
+                            orderTitle: 'G',
                             thumbnail: await (await fetch(ppBot)).buffer(), 
                             sellerJid: '0@s.whatsapp.net'
           
@@ -218,7 +218,7 @@ const anu = {
     let body   = itsu.menu.body   || '➠ %cmd%islimit'
     let footer = itsu.menu.footer || `›`.repeat(50) + '\n'
     let after  = itsu.menu.after  ||   (itsu.user.jid == global.itsu.user.jid ? '' : `Powered by https://wa.me/${global.itsu.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\`` 
-    ' Recode by itsu '
+    ' Recode by Gourav '
     let _text  = before + '\n'
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
@@ -254,7 +254,7 @@ const buttons = [
 {buttonId: `/owner`, buttonText: {displayText: 'owner'}, type: 1}
 ]
 const buttonsMessage = {
-    contentText: `Ｈｉ ｕｓｅｒ\nᵢₘ  ${itsu.user.name} \n\n\n- Bot group: \n\n- Github : https://github.com/FahriAdison\n\n`,
+    contentText: `Ｈｉ ｕｓｅｒ\nᵢₘ  ${itsu.user.name} \n\n\n- Bot group: \n\n- Github : https://github.com\n\n`,
     footerText: text,
     buttons: buttons,
     headerType: 4,
