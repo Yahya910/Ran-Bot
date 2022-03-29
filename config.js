@@ -51,7 +51,7 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 global.packname =  `Created by`
 global.author = `Gourav`
-global.wait = 'Subscribe Ya\n bit.ly/Papah-Chan'
+global.wait = 'Follow bro \n https://instagram.com/dark_devil_3609'
 global.dga = 'Jika Ingin Membeli Limit\nSilahkan Ketik #buy 1'
 global.thumb = tum
 global.thumb2 = tum2
