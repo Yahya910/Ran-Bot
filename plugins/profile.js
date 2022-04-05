@@ -13,13 +13,13 @@ let handler = async (m, { itsu }) => {
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let username = itsu.getName(who)
     let str = `
-Name: ${username} ${registered ? '(' + name + ') ': ''}(@${who.replace(/@.+/, '')})${about ? '\nAbout: ' + about : ''}
-Number: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-Link: https://wa.me/${who.split`@`[0]}${registered ? '\nAge: ' + age : ''}
-XP: TOTAL ${exp} (${exp - min} / ${xp}) [${max - exp} left to levelup]
-Level: ${level}
-Limit: ${limit}
-Registered: ${registered ? 'Yes (' + new Date(regTime) + ')': 'No'}${lastclaim > 0 ? '\nLast Claim: ' + new Date(lastclaim) : ''}
+الاسم: ${username} ${registered ? '(' + name + ') ': ''}(@${who.replace(/@.+/, '')})${about ? '\nAbout: ' + about : ''}
+الرقم: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+رابط الرقم: https://wa.me/${who.split`@`[0]}${registered ? '\nAge: ' + age : ''}
+النقاط: TOTAL ${exp} (${exp - min} / ${xp}) [${max - exp} left to levelup]
+المستوى: ${level}
+حد: ${limit}
+هل العضو مسجل: ${registered ? 'Yes (' + new Date(regTime) + ')': 'No'}${lastclaim > 0 ? '\nLast Claim: ' + new Date(lastclaim) : ''}
 `.trim()
     let mentionedJid = [who]
     itsu.sendFile(m.chat, pp, 'pp.jpg', str, m, false, { contextInfo: { mentionedJid }})
