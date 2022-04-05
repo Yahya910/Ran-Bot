@@ -19,17 +19,16 @@ let handler = async function (m, { text, usedPrefix, command }) {
   m.reply(`
 ━━━━ 「 *Successful Registration* 」━━━━
 
-╭─• 〘 INFO 〙
-│➥ Nama: ${name}
-│➥ Umur: ${age} Tahun
-│➥ Hadiah: ${prems.includes(who.split`@`[0]) ? '✅ Silahkan chat owner untuk claim hadiah' : '❌ Bukan User Premium'}
+╭─• 〘 معلومات 〙
+│➥ الاسم: ${name}
+│➥ العمر: ${age} سنة
 ╰──────•
 
-Ketik ${usedPrefix}sn untuk mendapatkan SERIAL NUMBER\n
-sn digunakan untuk unregister
+Ketik ${usedPrefix}ضع أمر  sn للحصول على رمز 
+يستعمل الرمز للخروج من الحساب
 `.trim())
 }
-handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
+handler.help = ['daftar', 'register'].map(v => v + ' <الاسم>.<العمر>')
 handler.tags = ['xp', 'main']
 
 handler.command = /^(daftar|reg(ister)?)$/i
