@@ -8,8 +8,8 @@ let handler = async function (m, { text, usedPrefix, command }) {
   if (!name) throw 'Nama tidak boleh kosong (Alphanumeric)'
   if (!age) throw 'Umur tidak boleh kosong (Angka)'
   age = parseInt(age)
-  if (age > 30) throw 'BAKA!Kamu dah tua'
-  if (age < 5) throw 'Mau diban kak?'
+  if (age > 30) throw 'عمي اذهب لأولادك رجاء'
+  if (age < 15) throw 'باكا انت صغير?'
   user.name = name.trim()
   user.age = age
   user.regTime = + new Date
