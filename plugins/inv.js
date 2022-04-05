@@ -147,44 +147,44 @@ let gambar = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=tr
     let num2 = itsu.getName(pasangan)
     let pp = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=Inventory'
     let str = `
-*╭───────[ Status ]────────✧*
-├◪ 📡 *Status:* ${premium ? "Premium": "Free"}
-├◪ 📇 *Name:* ${usrname} 
-├◪ 💌 *Pasangan:* ${pasangan ? num2 : '❌'}
-├◪ ❤️️ *Health:* ${healt}
-├◪ 🍸 *Stamina:* ${stamina}
-├◪ 💹 *Money:* ${money} 💲
-├◪ 💳 *Bank:* ${atm} 💲
-├◪ 📊 *Level:* ${level}
-├◪ ✨ *Exp:* ${exp}
-├◪ 📍 *Role:* ${role}
-├◪ 🎫 *Limit:* ${limit}
-├◪ ${registered ? '🎨 *Age:* ' + age : ''}
+*╭───────[ الحالة ]────────✧*
+├◪ 📡 *الحالة:* ${premium ? "Premium": "Free"}
+├◪ 📇 *الاسم:* ${usrname} 
+├◪ 💌 *الرقم:* ${pasangan ? num2 : '❌'}
+├◪ ❤️️ *الصحة:* ${healt}
+├◪ 🍸 *القدرة على التحمل:* ${stamina}
+├◪ 💹 *الاموال:* ${money} 💲
+├◪ 💳 *البنك:* ${atm} 💲
+├◪ 📊 *المتستوى:* ${level}
+├◪ ✨ *النقاط:* ${exp}
+├◪ 📍 *ادور:* ${role}
+├◪ 🎫 *الحد:* ${limit}
+├◪ ${registered ? '🎨 *الاسم:* ' + العمر : ''}
 *╰─────────────────────·····*
 
 *╭────────[ Tools ]─────────✧*
-├◪ 🛡️ *Armor:* ${armor == 0 ? '❌' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor' : ''}
-├◪ ⚔️ *Sword:* ${sword == 0 ? '❌' : '' || sword == 1 ? 'wooden sword' : '' || sword == 2 ? 'Iron sword' : '' || sword == 3 ? 'Gold sword' : '' || sword == 4 ? 'Diamond sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (*${_sword}* / *${sword *100}*)` : '' || sword == 5 ? '*Netherite Sword*' : ''}
+├◪ 🛡️ *الدرع:* ${armor == 0 ? '❌' : '' || armor == 1 ? 'Leather Armor' : '' || armor == 2 ? 'Iron Armor' : '' || armor == 3 ? 'Gold Armor' : '' || armor == 4 ? 'Diamond Armor' : '' || armor == 5 ? 'Netherite Armor' : ''}
+├◪ ⚔️ *السيف:* ${sword == 0 ? '❌' : '' || sword == 1 ? 'wooden sword' : '' || sword == 2 ? 'Iron sword' : '' || sword == 3 ? 'Gold sword' : '' || sword == 4 ? 'Diamond sword' : '' || sword > 0 && sword < 5 ? `Ketahanan (*${_sword}* / *${sword *100}*)` : '' || sword == 5 ? '*Netherite Sword*' : ''}
 ├◪ ╰ *Durability:* ${sdurability}
-├◪ ⛏️ *Pickaxe:* ${pickaxe == 0 ? '❌' : '' || pickaxe == 1 ? 'wooden pickaxe' : '' || pickaxe == 2 ? 'Iron pickaxe' : '' || pickaxe == 3 ? 'Gold pickaxe' : '' || pickaxe == 4 ? 'Diamond pickaxe' : '' || pickaxe == 5 ? 'Netherite pickaxe' : ''}
+├◪ ⛏️ *الفأس:* ${pickaxe == 0 ? '❌' : '' || pickaxe == 1 ? 'wooden pickaxe' : '' || pickaxe == 2 ? 'Iron pickaxe' : '' || pickaxe == 3 ? 'Gold pickaxe' : '' || pickaxe == 4 ? 'Diamond pickaxe' : '' || pickaxe == 5 ? 'Netherite pickaxe' : ''}
 ├◪ ╰ *Durability:* ${pdurability}
-├◪ 🎣 *Fishingrod:* ${pancing == 0 ? '❌' : '' || pancing == 1 ? 'kail pancing kayu' : '' }
+├◪ 🎣 *ممر صيد السمك:* ${pancing == 0 ? '❌' : '' || pancing == 1 ? 'kail pancing kayu' : '' }
 ├◪ ╰ *Durability:* ${fdurability}
 *╰──────────────────────·····*
 
 *╭───────[ Kandang ]────────✧*
-├◪ 🐔 *Ayam:* ${ayam}    
-├◪ 🐐 *Kambing:* ${kambing}
-├◪ 🐄 *Sapi:* ${sapi} 
-├◪ 🐃 *Kerbau:* ${kerbau}
-├◪ 🐖 *Babi:* ${babi}    
-├◪ 🐅 *Harimau:* ${harimau}
-├◪ 🐂 *Banteng:* ${banteng} 
-├◪ 🐒 *Monyet:* ${monyet}
-├◪ 🐗 *Babi Hutan:* ${babihutan}
-├◪ 🐼 *Panda:* ${panda}
-├◪ 🐘 *Gajah:* ${gajah}
-├◪ 🐊 *Buaya:* ${buaya}
+├◪ 🐔 *دجاجة:* ${ayam}    
+├◪ 🐐 *ماعز:* ${kambing}
+├◪ 🐄 *بقر:* ${sapi} 
+├◪ 🐃 *جاموس:* ${kerbau}
+├◪ 🐖 *خنزير:* ${babi}    
+├◪ 🐅 *قطة:* ${harimau}
+├◪ 🐂 *ثور:* ${banteng} 
+├◪ 🐒 *قرد:* ${monyet}
+├◪ 🐗 *خنزير بري:* ${babihutan}
+├◪ 🐼 *باندا:* ${panda}
+├◪ 🐘 *فيل:* ${gajah}
+├◪ 🐊 *تمساح:* ${buaya}
 │
 │ 🥢 Bisa kamu masak */masak ayamb*
 ├───────────────────────◪
