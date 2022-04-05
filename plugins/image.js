@@ -9,12 +9,12 @@ let handler  = async (m, { itsu, args, text }) => {
   let { url, width, height } = pickRandom(results) || {}
   if (!url) throw 'Not Found'
   itsu.sendFile(m.chat, url, 'gimage', `
-*── 「 GOOGLE IMAGE 」 ──*
-🛂 Result image: ${text}
+*── 「 صور قوقل 」 ──*
+🛂 نتائج البحث: ${text}
 
-❔ Detail:
-➸ *width*: ${width}
-➸ *height*: ${height}
+❔ معلومات الصورة:
+➸ *العرض*: ${width}
+➸ *الطول*: ${height}
 `.trim(), m, false,{thumbnail: global.thumb2})
 }
 handler.help = ['gimage <query>', 'image <query>']
