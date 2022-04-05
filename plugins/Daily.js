@@ -6,18 +6,18 @@ let handler = async (m, { itsu }) => {
     let _timers = (86400000 - __timers)
     let timers = clockString(_timers) 
     if (new Date - user.lastclaim > 86400000) {
-        itsu.reply(m.chat, `Anda sudah mengklaim dan mendapatkan 5000 💵money dan 3 potion`, m)
+        itsu.reply(m.chat, `لقد حصلت على 5000 نقطة و 3 جرعات❤️🇲🇦`, m)
         global.DATABASE.data.users[m.sender].money += 5000
         global.DATABASE.data.users[m.sender].potion += 3
         global.DATABASE.data.users[m.sender].lastclaim = new Date * 1
     } else {
-        let buttons = button(`silahkan tunggu *🕒${timers}* lagi untuk bisa mengclaim lagi`, user)
+        let buttons = button(`انتضر قليلا *🕒${timers}* عليك انتظار 24 ساعة بعد آخر سحب`, user)
         itsu.sendMessage(m.chat, buttons, MessageType.buttonsMessage, { quoted: m })
     }
 }
 handler.help = ['claim']
 handler.tags = ['rpg']
-handler.command = /^(claim|daily)$/i
+handler.command = /^(claim|daily|هدية)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
@@ -58,7 +58,7 @@ function button(teks, user) {
     
     const buttonMessage = {
         contentText: teks,
-        footerText: '©games-wabot',
+        footerText: '©شينوبو',
         buttons: buttons,
         headerType: 1
     }
