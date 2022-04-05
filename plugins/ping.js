@@ -44,20 +44,19 @@ let handler = async (m, { itsu }) => {
   m.reply(`
 Merespon dalam ${speed} millidetik
 
-💬 Status :
-- *${groups.length}* Group Chats
-- *${groupsIn.length}* Groups Joined
-- *${groups.length - groupsIn.length}* Groups Left
-- *${chats.length - groups.length}* Personal Chats
-- *${chats.length}* Total Chats
+💬 حول :
+- *${groups.length}* غروبات البوت
+- *${groups.length - groupsIn.length}* المجموعات التي خرج منها البوت
+- *${chats.length - groups.length}* رسائل خاصة
+- *${chats.length}* الرسائل كافة
 
-📱 *Phone Info* :
+📱 *معلومات حول البوت* :
 ${'```' + `
-🔋 Battery : ${itsu.battery ? `${itsu.battery.value}% ${itsu.battery.live ? '🔌 Charging...' : '⚡ Discharging'}` : 'Unknown'}
+🔋 شحن البوت : ${itsu.battery ? `${itsu.battery.value}% ${itsu.battery.live ? '🔌 اكتمل التحميل...' : '⚡ طور التحميل'}` : 'Unknown'}
 ${util.format(itsu.user.phone)}
 `.trim() + '```'}
 
-💻 *Server Info* :
+💻 *معلومات السرفر* :
 RAM: ${format(os.totalmem() - os.freemem())} / ${format(os.totalmem())}
 
 _NodeJS Memory Usage_
