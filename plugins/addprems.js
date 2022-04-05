@@ -8,7 +8,7 @@ let who
   //            if (participants.map(v=>v.jid).includes(global.itsu.user.jid)) {
     global.DATABASE._data.chats[m.chat].premium = true
   var nomor = m.quoted.sender
-    m.reply(`*Done berhasil added User✅*\n\n*Nomor : wa.me/${nomor.split("@s.whatsapp.net")[0]}\n*Expired:* 30Days\n*Thanks For Added Premium !*`)
+    m.reply(`*لقد تم ✅*\n\n*Nomor : wa.me/${nomor.split("@s.whatsapp.net")[0]}\n*تنتهي بعد:*30 يوما\n*نتمنى أن تستمع بمميزات العضوية  !*`)
  //      } else m.reply('Ada nomor host disini...')
 }
 handler.help = ['addprems <nomor>']
