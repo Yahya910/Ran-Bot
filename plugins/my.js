@@ -6,19 +6,19 @@ let handler = async (m, { itsu }) => {
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
     let user = global.DATABASE.data.users[who]
-let anu = `╭───❑ 「 BALANCE 」 ❑────
-├─ 📇 *Name*: ${user.name}
-├─ 🆔 *Nomor* : ${require('awesome-phonenumber')(`+${m.sender.split('@')[0]}`).getNumber('international')}
-├─ 🎨 *Age* : ${user.registered ? '' + user.age : ''}
-├─ 🎫 *Limit*:${user.limit}
-├─ 💹 *Money*: ${user.money}
-├─ 📍 *Role*: ${user.role}
-├─ 💳 *Bank* : ${user.atm}
-├─ 🎟 ️ *Limit Game* : ${user.glimit}
-├─ 📊 *Level*: ${user.level}
-╰─❑ ✨ *Exp*:${user.exp}
+let anu = `╭───❑ 「 البنك 」 ❑────
+├─ 📇 *الاسم*: ${user.name}
+├─ 🆔 *الرقم* : ${require('awesome-phonenumber')(`+${m.sender.split('@')[0]}`).getNumber('international')}
+├─ 🎨 *العمر* : ${user.registered ? '' + user.age : ''}
+├─ 🎫 *الحد*:${user.limit}
+├─ 💹 *الأموال*: ${user.money}
+├─ 📍 *النقاط*: ${user.role}
+├─ 💳 *البنك* : ${user.atm}
+├─ 🎟 ️ *حد الألعاب* : ${user.glimit}
+├─ 📊 *المستوى*: ${user.level}
+╰─❑ ✨ *النقاط*:${user.exp}
 `.trim()
-itsu.sendButtonLoc(m.chat, thumb, anu, wm, 'Inventory', '#inv', m)
+itsu.sendButtonLoc(m.chat, thumb, anu, wm, 'الممتلكات', '#inv', m)
 }
 handler.help = ['my', 'my @user']
 handler.tags = ['xp']
